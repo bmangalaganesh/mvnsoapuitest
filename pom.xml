@@ -34,7 +34,17 @@
                         </goals>
                         <configuration>
                             <projectFile>REST-Demo-soapui-project.xml</projectFile>
-                            <projectProperties>
+                            
+			    <!-- Add the Junit style reports here -->
+ 			    <outputFolder>reports</outputFolder>
+               		    <junitReport>true</junitReport>
+                            <exportAll>true</exportAll>
+                            <printReport>true</printReport>
+
+
+
+
+			    <projectProperties>
                                 <value>message=Hello World!</value>
                             </projectProperties>
                         </configuration>
